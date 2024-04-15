@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "vue": "^3.4.21",
-    "vue-plotting-ui-lib": "^0.0.2"
+    "vue-plotting-ui-lib": "^0.0.3"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
