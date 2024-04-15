@@ -1,6 +1,6 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-import FiddleFit from 'vue-plotting-ui-lib'
+import PointPlacer from 'vue-plotting-ui-lib'
 import "vue-plotting-ui-lib/style.css"
 
 const measurements = [
@@ -20,7 +20,7 @@ const measurements = [
   </header>
 
   <main>
-<FiddleFit image-source="https://furtadosbeta.gumlet.io/media/catalog/product/2/0/208079_1_1.jpg"
+<PointPlacer image-source="https://furtadosbeta.gumlet.io/media/catalog/product/2/0/208079_1_1.jpg"
     :measurements="measurements" :on-save-click="(lines) => console.log(lines)" />
   </main>
 </template>
