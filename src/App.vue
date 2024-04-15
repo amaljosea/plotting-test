@@ -1,6 +1,7 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-import FiddleFit from 'vue-plotting-ui-client/src/components/FiddleFit.vue'
+import FiddleFit from 'vue-plotting-ui-lib'
+import "vue-plotting-ui-lib/style.css"
 
 const measurements = [
   { y: 2, color: "blue" }, { y: 57, color: "red" },
@@ -19,8 +20,8 @@ const measurements = [
   </header>
 
   <main>
- <FiddleFit image-source="https://furtadosbeta.gumlet.io/media/catalog/product/2/0/208079_1_1.jpg" :measurements="measurements"
-    :on-save-click="(lines) => console.log(lines)" />
+<FiddleFit image-source="https://furtadosbeta.gumlet.io/media/catalog/product/2/0/208079_1_1.jpg"
+    :measurements="measurements" :on-save-click="(lines) => console.log(lines)" />
   </main>
 </template>
 
